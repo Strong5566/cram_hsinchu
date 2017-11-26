@@ -47,7 +47,7 @@
 					illegal = "<br>"+"<span style=\"display: inline-block; background-color: #f7d639; font-size: 12px; padding: 4px 6px; border-radius: 3px;\">水質不合格</span>";
 				}
 			}
-			var link = "<br>"+"<a href={../../School.html?name="+title+"} style=\"display: inline-block; border: 1px solid #333; color: #333; text-decoration: none; border-radius: 3px; padding: 3px 6px;\">瞭解更多</a>";
+			var link = "<br>"+"<a href=http://localhost:5566/School.html?name="+title+" style=\"display: inline-block; border: 1px solid #333; color: #333; text-decoration: none; border-radius: 3px; padding: 3px 6px;\">瞭解更多</a>";
 			var marker = L.marker(L.latLng(a[0], a[1]), { title: title });
 			marker.bindPopup("<b>"+title+"</b>"+tel+subject+illegal+link);
 			markers.addLayer(marker);
